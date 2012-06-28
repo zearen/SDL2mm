@@ -1,0 +1,74 @@
+SDL_WINDOWEVENT_NONE
+	
+
+(never used)
+
+SDL_WINDOWEVENT_SHOWN
+	
+
+window has been shown
+
+SDL_WINDOWEVENT_HIDDEN
+	
+
+window has been hidden
+
+SDL_WINDOWEVENT_EXPOSED
+	
+
+window has been exposed and should be redrawn
+
+SDL_WINDOWEVENT_MOVED
+	
+
+window has been moved to data1, data2
+
+SDL_WINDOWEVENT_RESIZED
+	
+
+window has been resized to data1xdata2
+
+SDL_WINDOWEVENT_SIZE_CHANGED
+	
+
+window size has changed, either as a result of an API call or through the system or user changing the window size
+
+SDL_WINDOWEVENT_MINIMIZED
+	
+
+window has been minimized
+
+SDL_WINDOWEVENT_MAXIMIZED
+	
+
+window has been maximized
+
+SDL_WINDOWEVENT_RESTORED
+	
+
+window has been restored to normal size and position
+
+SDL_WINDOWEVENT_ENTER
+	
+
+window has gained mouse focus
+
+SDL_WINDOWEVENT_LEAVE
+	
+
+window has lost mouse focus
+
+SDL_WINDOWEVENT_FOCUS_GAINED
+	
+
+window has gained keyboard focus
+
+SDL_WINDOWEVENT_FOCUS_LOST
+	
+
+window has lost keyboard focus
+
+SDL_WINDOWEVENT_CLOSE
+	
+
+the window manager requests that the window be closed
