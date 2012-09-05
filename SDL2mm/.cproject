@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?>
-
-<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="cdt.managedbuild.config.gnu.so.debug.1007899638">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.so.debug.1007899638" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/SDL2mm"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/SDL2mm/Debug"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="SDL2mm"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -36,6 +32,14 @@
 								</option>
 								<option id="gnu.cpp.compiler.option.other.pic.1296952986" name="Position Independent Code (-fPIC)" superClass="gnu.cpp.compiler.option.other.pic" value="true" valueType="boolean"/>
 								<option id="gnu.cpp.compiler.option.other.other.1249809147" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++0x" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.include.paths.2023762603" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/include"/>
+									<listOptionValue builtIn="false" value="/usr/local/include"/>
+									<listOptionValue builtIn="false" value="/usr/lib/gcc/i686-pc-linux-gnu/4.7.1/include-fixed"/>
+									<listOptionValue builtIn="false" value="/usr/lib/gcc/i686-pc-linux-gnu/4.7.1/include"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7.1"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7.1/i686-pc-linux-gnu"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1246773024" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.so.debug.899063570" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.debug">
@@ -73,7 +77,7 @@
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/SDL2mm"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/SDL2mm/Release"/>
-						<entry flags="RESOLVED" kind="libraryFile" name="SDL2mm"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="SDL2mm" srcPrefixMapping="" srcRootPath=""/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -131,16 +135,20 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="SDL2mm.cdt.managedbuild.target.gnu.so.730935636" name="Shared Library" projectType="cdt.managedbuild.target.gnu.so"/>
 	</storageModule>
-	<storageModule moduleId="refreshScope" versionNumber="1">
-		<resource resourceType="PROJECT" workspacePath="/SDL2mm"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/SDL2mm"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/SDL2mm"/>
+		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.release.1965218834;cdt.managedbuild.config.gnu.so.release.1965218834.;cdt.managedbuild.tool.gnu.cpp.compiler.so.release.1007024235;cdt.managedbuild.tool.gnu.cpp.compiler.input.2014263432">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.release.1965218834;cdt.managedbuild.config.gnu.so.release.1965218834.;cdt.managedbuild.tool.gnu.c.compiler.so.release.594976177;cdt.managedbuild.tool.gnu.c.compiler.input.1529436742">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.debug.1007899638;cdt.managedbuild.config.gnu.so.debug.1007899638.;cdt.managedbuild.tool.gnu.cpp.compiler.so.debug.2121852802;cdt.managedbuild.tool.gnu.cpp.compiler.input.1246773024">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
@@ -150,10 +158,13 @@
 					<parser enabled="true"/>
 				</buildOutputProvider>
 				<scannerInfoProvider id="specsFile">
-					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot; -std=c++0x -fPIC" command="g++" useDefault="true"/>
+					<runAction arguments="-E -P -v -dD &quot;${plugin_state_location}/specs.cpp&quot; --std=c++0x -fPIC" command="g++" useDefault="true"/>
 					<parser enabled="true"/>
 				</scannerInfoProvider>
 			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.release.1965218834;cdt.managedbuild.config.gnu.so.release.1965218834.;cdt.managedbuild.tool.gnu.c.compiler.so.release.594976177;cdt.managedbuild.tool.gnu.c.compiler.input.1529436742">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.debug.1007899638;cdt.managedbuild.config.gnu.so.debug.1007899638.;cdt.managedbuild.tool.gnu.c.compiler.so.debug.899063570;cdt.managedbuild.tool.gnu.c.compiler.input.2107980986">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>

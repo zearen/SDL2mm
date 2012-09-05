@@ -13,7 +13,6 @@ class Surface {
 private:
 	SDL_Surface *sdlSurface;
 public:
-	Surface();
 	Surface(SDL_Surface *initSurface);
 	~Surface();
 
@@ -21,3 +20,4 @@ public:
 };
 
 }
+#endif

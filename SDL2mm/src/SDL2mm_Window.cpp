@@ -6,7 +6,7 @@
 #include <vector>
 #include "SDL2mm_Internal.h"
 
-Window::Window(const char* title="", int x=0, int y=0, int w=800, int h=600, Uint32 flags) {
+Window::Window(const char* title, Uint32 flags, int x, int y, int w, int h) {
 	sdlWindow = SDL_CreateWindow(title, x, y, w, h, flags);
 }
 

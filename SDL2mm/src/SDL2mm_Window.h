@@ -13,7 +13,7 @@ class Window {
   private:
 	SDL_Window *sdlWindow;
   public:
-	Window(const char* title="", int x=0, int y=0, int w=800, int h=600, Uint32 flags);
+	Window(const char* title, Uint32 flags, int x=0, int y=0, int w=800, int h=600);
 	Window(SDL_Window *initWindow);
 	~Window();
 
