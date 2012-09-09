@@ -19,6 +19,7 @@
 #include <SDL2/SDL.h>
 
 #include "SDL2mm_Error.h"
+#include "SDL2mm_Keys.h"
 #include "SDL2mm_Program.h"
 #include "SDL2mm_Events.h"
 #include "SDL2mm_Surface.h"
