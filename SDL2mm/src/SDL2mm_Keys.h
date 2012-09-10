@@ -4,7 +4,7 @@
 #include "SDL2mm.h"
 
 namespace SDL2 {
-	namespace Keycode {
+	namespace Keycodes {
 	enum KeycodeEnum {
 		UNKNOWN = SDLK_UNKNOWN,
 		RETURN = SDLK_RETURN,
@@ -175,9 +175,9 @@ namespace SDL2 {
 		EJECT = SDLK_EJECT,
 		SLEEP = SDLK_SLEEP,
 	};}
-	typedef Keycode::KeycodeEnum EKeycode;
+	typedef Keycodes::KeycodeEnum EKeycode;
 
-	namespace Scancode {
+	namespace Scancodes {
 	enum ScancodeEnum {
 		UNKNOWN = SDL_SCANCODE_UNKNOWN,
 		A = SDL_SCANCODE_A,
@@ -351,7 +351,7 @@ namespace SDL2 {
 		EJECT = SDL_SCANCODE_EJECT,
 		SLEEP = SDL_SCANCODE_SLEEP
 	};}
-	typedef Scancode::ScancodeEnum EScancode;
+	typedef Scancodes::ScancodeEnum EScancode;
 
 	namespace Modifiers {
 	enum ModifierEnum {

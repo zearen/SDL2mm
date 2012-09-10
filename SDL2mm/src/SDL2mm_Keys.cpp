@@ -14,7 +14,7 @@ Modifier::Modifier(Modifier& toCopy) {
 }
 
 bool Modifier::has(EModifier modifier) {
-	return mod & modifier != 0;
+	return (mod & modifier) != 0;
 }
 
 void Modifier::set(EModifier modifier) {
@@ -27,8 +27,8 @@ void Modifier::unset(EModifier modifier) {
 
 KeySym::KeySym() {
 	keySym.mod = 0;
-	keySym.scancode = Scancode::UNKNOWN;
-	keySym.sym = Keycode::UNKNOWN;
+	keySym.scancode = (SDL_Scancode) Scancode::UNKNOWN;
+	keySym.sym = (SDL_Keycode) Keycode::UNKNOWN;
 }
 
 KeySym::KeySym(SDL_Keysym initKeySym) {
@@ -40,13 +40,14 @@ KeySym::KeySym(KeySym& toCopy) {
 }
 
 EScancode KeySym::scancode() {
-	return keySym.scancode;
+	return (EScancode) keySym.scancode;
 }
 
 EKeycode KeySym::keycode() {
-	return keySym.scancode;
+	return (EKeycode) keySym.scancode;
 }
 
 Modifier KeySym::modifier() {
-	return Modifier(keySym.mod);
+	Modifier ret(keySym.mod);
+	return ret;
 }

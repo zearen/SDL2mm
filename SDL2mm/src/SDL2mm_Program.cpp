@@ -23,7 +23,7 @@ bool Application::processEvents() {
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {
 		switch(event.type) {
-		case QUIT:
+		case EventEnum::QUIT:
 			_quit = true;
 			alive = false;
 			break;

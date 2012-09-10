@@ -9,9 +9,11 @@
  * all necessary other headers with it and does version tests.
  */
 
+
 #ifndef __GXX_EXPERIMENTAL_CXX0X__
 #error Library requires c++0x (c++11) to build
 #endif
+
 
 #ifndef _SDL2MM_H
 #define _SDL2MM_H

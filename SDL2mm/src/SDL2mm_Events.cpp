@@ -13,4 +13,3 @@
 
 #define _SDL2MM_INTERNAL
 #include "SDL2mm_Internal.h"
-

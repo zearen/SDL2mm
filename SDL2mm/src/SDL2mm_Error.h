@@ -1,4 +1,5 @@
 #ifndef _SDL2MM_ERROR_H
+#define _SDL2MM_ERROR_H
 
 #include "SDL2mm.h"
 #include <exception>
